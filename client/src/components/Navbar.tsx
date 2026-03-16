@@ -97,7 +97,6 @@ export default function Navbar({ productName }: NavbarProps = {}) {
 
       {/* Desktop Nav Links — hidden on mobile & tablet */}
       <ul style={{
-        display: "flex",
         alignItems: "center",
         gap: 28,
         listStyle: "none",
@@ -154,7 +153,7 @@ export default function Navbar({ productName }: NavbarProps = {}) {
       </ul>
 
       {/* CTA Buttons — hidden on mobile & tablet */}
-      <div style={{ display: "flex", alignItems: "center", gap: 10 }} className="hidden lg:flex">
+      <div style={{ alignItems: "center", gap: 10 }} className="hidden lg:flex">
         <a href={href("#quiz")} className="btn-ghost-cream" style={{ padding: "10px 20px", fontSize: "0.875rem" }}>
           Check Eligibility
         </a>
