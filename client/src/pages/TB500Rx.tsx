@@ -17,12 +17,12 @@ const DARK_ORANGE = "#D2570A";
 const DM = "'DM Sans', system-ui, sans-serif";
 
 const IMGS = {
-  // Hero: elite athlete mid-performance / physical recovery
-  hero:  "https://images.unsplash.com/photo-1517963879433-6ad2a56b6a61?w=1800&q=80",
-  // Mid-page banner: physical therapy / tendon & muscle rehabilitation
+  // Hero: athletic male runner / physical performance
+  hero:  "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1800&q=80",
+  // Mid-page banner: physical therapy / muscle rehabilitation
   cells: "https://images.unsplash.com/photo-1576678927484-cc907957088c?w=1800&q=80",
-  // FAQ section: sports medicine / clinical recovery lab
-  labs:  "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=1200&q=80",
+  // FAQ section: white male doctor / physician portrait
+  labs:  "https://images.unsplash.com/photo-1537368910025-700350fe46c7?w=1200&q=80",
   // Reserve
   heal:  "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=1200&q=80",
 };
