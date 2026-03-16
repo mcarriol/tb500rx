@@ -95,7 +95,7 @@ export default function Navbar({ productName }: NavbarProps = {}) {
         </div>
       </a>
 
-      {/* Desktop Nav Links — hidden on mobile */}
+      {/* Desktop Nav Links — hidden on mobile & tablet */}
       <ul style={{
         display: "flex",
         alignItems: "center",
@@ -103,7 +103,7 @@ export default function Navbar({ productName }: NavbarProps = {}) {
         listStyle: "none",
         margin: 0,
         padding: 0,
-      }} className="hidden md:flex">
+      }} className="hidden lg:flex">
         {navLinks.map((link) => (
           <li key={link.label}>
             <a
@@ -153,8 +153,8 @@ export default function Navbar({ productName }: NavbarProps = {}) {
         </li>
       </ul>
 
-      {/* CTA Buttons — hidden on mobile */}
-      <div style={{ display: "flex", alignItems: "center", gap: 10 }} className="hidden md:flex">
+      {/* CTA Buttons — hidden on mobile & tablet */}
+      <div style={{ display: "flex", alignItems: "center", gap: 10 }} className="hidden lg:flex">
         <a href={href("#quiz")} className="btn-ghost-cream" style={{ padding: "10px 20px", fontSize: "0.875rem" }}>
           Check Eligibility
         </a>
@@ -163,7 +163,7 @@ export default function Navbar({ productName }: NavbarProps = {}) {
         </a>
       </div>
 
-      {/* Mobile Hamburger — only visible on mobile (hidden on md and above) */}
+      {/* Hamburger — visible on mobile & tablet (hidden on lg and above) */}
       <button
         onClick={() => setMenuOpen(!menuOpen)}
         style={{
@@ -174,7 +174,7 @@ export default function Navbar({ productName }: NavbarProps = {}) {
           flexDirection: "column",
           gap: 5,
         }}
-        className="flex md:hidden"
+        className="flex lg:hidden"
         aria-label="Toggle menu"
       >
         {[0, 1, 2].map((i) => (

@@ -355,3 +355,21 @@
   .btn-ghost-cream     { width: 100%; justify-content: center; }
   nav                  { padding: 16px 20px !important; }
 }
+
+/* ── Comparison table: always scrollable, never clips ── */
+.comparison-table-wrap {
+  overflow-x: auto !important;
+  -webkit-overflow-scrolling: touch;
+  width: 100%;
+  display: block;
+}
+.comparison-table-wrap table {
+  min-width: 640px;
+}
+@media (max-width: 1024px) {
+  .comparison-table-wrap {
+    border: 1px solid rgba(201,169,110,0.1);
+    border-radius: 8px;
+    padding-bottom: 4px;
+  }
+}
